@@ -5,7 +5,7 @@
 | | Link |
 |---|---|
 | GitHub repository | https://github.com/sawanty/2026ak05327_ML_Assignment2_drybean |
-| Live Streamlit app | `<paste your *.streamlit.app link here>` |
+| Live Streamlit app | https://2026ak05327mlassignment2drybeangit-4yzqjy5mcgeb7pyavoay4g.streamlit.app/ |
 
 ---
 
