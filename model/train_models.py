@@ -161,7 +161,7 @@ def main():
 
     table = pd.DataFrame({m: v["test_metrics"] for m, v in summary.items()}).T
     print("\nComparison table (test set):")
-    print(table.to_markdown(floatfmt=".4f") if hasattr(table, "to_markdown") else table)
+    print(table.to_string(float_format="{:.4f}".format))
 
 
 if __name__ == "__main__":
