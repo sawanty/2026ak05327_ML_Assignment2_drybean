@@ -1,0 +1,115 @@
+{
+  "dataset": "UCI Dry Bean Dataset (id 602)",
+  "target": "Class",
+  "features": [
+    "Area",
+    "Perimeter",
+    "MajorAxisLength",
+    "MinorAxisLength",
+    "AspectRation",
+    "Eccentricity",
+    "ConvexArea",
+    "EquivDiameter",
+    "Extent",
+    "Solidity",
+    "roundness",
+    "Compactness",
+    "ShapeFactor1",
+    "ShapeFactor2",
+    "ShapeFactor3",
+    "ShapeFactor4"
+  ],
+  "classes": [
+    "BARBUNYA",
+    "BOMBAY",
+    "CALI",
+    "DERMASON",
+    "HOROZ",
+    "SEKER",
+    "SIRA"
+  ],
+  "train_rows": 10834,
+  "test_rows": 2709,
+  "seed": 2026,
+  "models": {
+    "Logistic Regression": {
+      "file": "logistic_regression.joblib",
+      "best_params": {
+        "C": 1.0
+      },
+      "cv_f1_macro": 0.9362,
+      "test_metrics": {
+        "Accuracy": 0.9251,
+        "AUC": 0.9947,
+        "Precision": 0.9373,
+        "Recall": 0.9375,
+        "F1": 0.9374,
+        "MCC": 0.9094
+      }
+    },
+    "Decision Tree": {
+      "file": "decision_tree.joblib",
+      "best_params": {
+        "criterion": "gini",
+        "max_depth": 10,
+        "min_samples_leaf": 10
+      },
+      "cv_f1_macro": 0.9231,
+      "test_metrics": {
+        "Accuracy": 0.911,
+        "AUC": 0.9821,
+        "Precision": 0.9252,
+        "Recall": 0.9232,
+        "F1": 0.9241,
+        "MCC": 0.8924
+      }
+    },
+    "KNN": {
+      "file": "knn.joblib",
+      "best_params": {
+        "n_neighbors": 9,
+        "weights": "distance"
+      },
+      "cv_f1_macro": 0.9362,
+      "test_metrics": {
+        "Accuracy": 0.9228,
+        "AUC": 0.9882,
+        "Precision": 0.9374,
+        "Recall": 0.9364,
+        "F1": 0.9369,
+        "MCC": 0.9067
+      }
+    },
+    "Naive Bayes": {
+      "file": "naive_bayes.joblib",
+      "best_params": {
+        "var_smoothing": 0.001
+      },
+      "cv_f1_macro": 0.9052,
+      "test_metrics": {
+        "Accuracy": 0.8992,
+        "AUC": 0.9914,
+        "Precision": 0.9067,
+        "Recall": 0.9123,
+        "F1": 0.9092,
+        "MCC": 0.8786
+      }
+    },
+    "Support Vector Machine": {
+      "file": "svm.joblib",
+      "best_params": {
+        "C": 10.0,
+        "gamma": "scale"
+      },
+      "cv_f1_macro": 0.9418,
+      "test_metrics": {
+        "Accuracy": 0.928,
+        "AUC": 0.9946,
+        "Precision": 0.9404,
+        "Recall": 0.9398,
+        "F1": 0.94,
+        "MCC": 0.9129
+      }
+    }
+  }
+}
